@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dino Preguntón</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <div id="score">Puntuación: 0</div>
+        <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <div id="questionModal" class="modal">
+        <div class="modal-content">
+            <h2 id="questionText"></h2>
+            <div id="answers"></div>
+        </div>
+    </div>
+
+    <div id="gameOverModal" class="modal">
+        <div class="modal-content">
+            <h2>¡Fin del juego!</h2>
+            <p>Tu puntuación final es: <span id="finalScore">0</span></p>
+            <p>Total de respuestas correctas: <span id="correctAnswers">0</span></p>
+            <button onclick="window.location.reload()">Jugar de nuevo</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
