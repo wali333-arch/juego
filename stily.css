@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f4f8; /* Color de fondo suave */
+    color: #333;
+}
+
+.game-container {
+    text-align: center;
+    position: relative;
+    border: 2px solid #5a5a5a;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    background-color: #fff;
+    padding: 20px;
+}
+
+#score {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4a90e2; /* Color azul para la puntuación */
+}
+
+#gameCanvas {
+    background-color: #e6f7ff; /* Fondo del juego azul claro */
+    border-radius: 10px;
+}
+
+.dinosaur {
+    width: 40px;
+    height: 40px;
+    background-color: #5cb85c; /* Dino verde */
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+}
+
+.obstacle {
+    width: 25px;
+    height: 50px;
+    background-color: #d9534f; /* Obstáculo rojo */
+    position: absolute;
+    bottom: 0;
+}
+
+/* Estilos para la ventana modal (preguntas y fin del juego) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 25px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+#answers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#answers button {
+    background-color: #4a90e2; /* Botones azules */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#answers button:hover {
+    background-color: #357ABD;
+}
+
+#gameOverModal button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#gameOverModal button:hover {
+    background-color: #449d44;
+}
